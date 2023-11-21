@@ -1,0 +1,28 @@
+
+{
+   "action": {
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "injectStyle.js" ],
+      "matches": [ "https://prodmyinfo.montana.edu/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   },
+   {
+      "all_frames": true,
+      "js": [ "injectRedirect.js" ],
+      "matches": [ "https://login.montana.edu/idp/profile/cas/logout*" ],
+      "run_at": "document_end",
+      "world": "MAIN"
+   } ],
+   "description": "Adds a stylesheet for MSU's MyInfo",
+   "host_permissions": [ "https://prodmyinfo.montana.edu/*" ],
+   "icons": {
+      "128": "logo/logo-128.png",
+      "48": "logo/logo-48.png"
+   },
+   "manifest_version": 3,
+   "name": "MyInfo+",
+   "version": "0.12.4"
+}
