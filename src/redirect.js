@@ -8,4 +8,4 @@ function injectRefresh() {
     document.documentElement.style.visibility = '';
 }
 document.documentElement.style.visibility = 'hidden';
-window.addEventListener ("load", injectRefresh, false);
+window.addEventListener ("load", injectRefresh);

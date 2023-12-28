@@ -3,21 +3,34 @@
    "action": {
    },
    "content_scripts": [ {
-      "all_frames": true,
-      "js": [ "injectStyle.js" ],
+      "js": [ "style.js" ],
+      "matches": [ "https://prodmyinfo.montana.edu/*" ],
+      "run_at": "document_start"
+   },
+   {
+      "js": [ "silenceAlert.js" ],
       "matches": [ "https://prodmyinfo.montana.edu/*" ],
       "run_at": "document_start",
       "world": "MAIN"
    },
    {
-      "all_frames": true,
-      "js": [ "injectRedirect.js" ],
+      "js": [ "redirect.js" ],
       "matches": [ "https://login.montana.edu/idp/profile/cas/logout*" ],
       "run_at": "document_end",
       "world": "MAIN"
    } ],
+   "background": {
+      "service_worker": "background.js"
+   },
+   "permissions": ["scripting"],
+   "host_permissions": ["https://prodmyinfo.montana.edu/*"],
    "description": "Adds a stylesheet for MSU's MyInfo",
-   "host_permissions": [ "https://prodmyinfo.montana.edu/*" ],
+    "web_accessible_resources": [
+       {
+          "resources": ["stylesheet.css"],
+          "matches": ["https://prodmyinfo.montana.edu/*"]
+       }
+    ],
    "icons": {
       "128": "logo/logo-128.png",
       "48": "logo/logo-48.png"
