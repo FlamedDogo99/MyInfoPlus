@@ -10,6 +10,3 @@ The purpose of the MyInfo+ extension is to improve the look and functionality of
 ## Toggling the Stylesheet
 
 To toggle the visbility of the stylesheet, simply click on the extension icon.
-
-
-**Note:** The toggle state is not saved between tabs.
