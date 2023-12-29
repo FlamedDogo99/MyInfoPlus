@@ -60,6 +60,10 @@ function onDisconnect() {
 
 window.addEventListener ("load", createStyle);
 function createStyle() {
+    let newMeta = document.createElement('meta');
+    newMeta.name = 'viewport';
+    newMeta.content = 'width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1,user-scalable=yes';
+    document.head.appendChild(newMeta);
     let newStyle = document.createElement("style");
     newStyle.id = "MyInfoPlusMainStyle";
     newStyle.textContent = styleString;
