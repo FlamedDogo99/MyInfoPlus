@@ -35,7 +35,8 @@ function createTitleStyle() {
         body {
             margin-left: 10px !important;
             margin-right: 10px !important;
-            background-image: none;
+            background: none !important;
+            background-image: none !important;
             background-repeat: no-repeat !important;
         }`;
         document.documentElement.appendChild(titleStyleElement);
@@ -53,8 +54,15 @@ function onDisconnect() {
         return;
     }
     console.log("Content script is orphaned. Disconnecting event listeners but leaving injected styles");
-    chrome.runtime.onMessage.removeListener(onMessage);
-    window.removeEventListener("myInfoPlusOrphanedMessage", onDisconnect);
+
+    try {
+        chrome.runtime.onMessage.removeListener(onMessage);
+    } catch(e) {
+    }
+    try {
+        window.removeEventListener("myInfoPlusOrphanedMessage", onDisconnect);
+    } catch(e) {
+    }
 
 }
 
@@ -114,7 +122,7 @@ const styleString = `
 }
 
 .headerwrapperdiv table.plaintable td.pldefault {
-  display: flex;
+  display: inline-block;
 }
 
 body,
