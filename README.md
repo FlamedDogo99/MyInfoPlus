@@ -2,6 +2,7 @@
 
 # MyInfo+
 [![](https://img.shields.io/github/v/release/FlamedDogo99/MyInfoPlus?style=flat-square&logo=github&logoColor=white&label=GitHub&color=181716)](https://github.com/FlamedDogo99/MyInfoPlus/releases)
+![Static Badge](https://img.shields.io/badge/Chrome-pending-orange?style=flat-square&logo=google-chrome&logoColor=%23ffffff)
 [![](https://img.shields.io/github/license/FlamedDogo99/MyInfoPlus?style=flat-square)](https://github.com/FlamedDogo99/MyInfoPlus/blob/master/LICENSE)
 
 
