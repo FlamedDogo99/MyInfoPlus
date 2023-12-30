@@ -117,6 +117,7 @@ function onMessage(message, sender, sendResponse) {
 const styleString = `
 .headerlinksdiv2 {
     padding: 0px;
+    padding-right: 10px;
     display: block !important;
     white-space: nowrap;
 }
@@ -254,7 +255,6 @@ hr
 .pagetitlediv td h2 {
   font-family:"Ropa Sans", helvetica, arial, sans-serif;
   font-size:1.8em;
-  text-transform:uppercase;
   color:#00205B;
   margin:0;
 }
