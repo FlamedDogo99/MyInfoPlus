@@ -2,7 +2,7 @@
 
 # MyInfo+
 [![](https://img.shields.io/github/v/release/FlamedDogo99/MyInfoPlus?style=flat-square&logo=github&logoColor=white&label=GitHub&color=181716)](https://github.com/FlamedDogo99/MyInfoPlus/releases)
-[![](https://img.shields.io/chrome-web-store/v/eafaaokahjmielkhamgdndlgfkcnmgdj?style=flat-square&logo=google-chrome&logoColor=white&label=Chrome&color=blue)](https://chrome.google.com/webstore/detail/eafaaokahjmielkhamgdndlgfkcnmgdj)
+[![](https://img.shields.io/badge/Chrome-v0.12.0-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/eafaaokahjmielkhamgdndlgfkcnmgdj)
 [![](https://img.shields.io/github/license/FlamedDogo99/MyInfoPlus?style=flat-square)](https://github.com/FlamedDogo99/MyInfoPlus/blob/master/LICENSE)
 
 [<img src=".github/ISSUE_TEMPLATE/chrome.png" alt="Webstore icon" width="206px"></img>](https://chrome.google.com/webstore/detail/eafaaokahjmielkhamgdndlgfkcnmgdj)
