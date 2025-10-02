@@ -1,3 +1,4 @@
+As of October 1, 2025, MyInfo is no longer active.
 <img src="src/logo/logo-2000.png" alt="MyInfo+ logo" align="right" width="128px"></img>
 
 # MyInfo+
